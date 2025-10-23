@@ -1,0 +1,7 @@
+footer{
+    text-decoration: overline;
+}
+#lista1{
+    display: inline;
+    border-right: 2px solid;
+}
