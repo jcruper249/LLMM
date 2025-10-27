@@ -5,8 +5,3 @@ footer{
     display: inline;
     border-right: 2px solid;
 }
-body{
-    background-image:url("IMG/Imagenfondo.png");
-    background-size: cover;                      
-    background-position: center;                   
-}
