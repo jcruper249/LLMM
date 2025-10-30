@@ -18,8 +18,12 @@ footer{
 #lista1 a:hover{
         color: orange;
 }
+
+#lista2{
+        position: fixed;
+}
 #lista2 a:visited{
-    color:blueviolet
+        color:blueviolet
 }
 #lista1 a:active{
         color: green;
@@ -29,5 +33,5 @@ footer{
         color: fuchsia;
 }
 body{
-    background-color: floralwhite;
+        background-color: floralwhite;
 }
