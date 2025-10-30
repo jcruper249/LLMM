@@ -20,16 +20,16 @@ footer{
 }
 
 #lista2{
-        position: fixed;
+        display: inline;
 }
 #lista2 a:visited{
         color:blueviolet
 }
-#lista1 a:active{
+#lista2 a:active{
         color: green;
 }
 
-#lista1 a:hover{
+#lista2 a:hover{
         color: fuchsia;
 }
 body{
