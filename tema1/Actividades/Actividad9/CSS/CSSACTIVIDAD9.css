@@ -21,3 +21,16 @@ footer{
         color: orange;
 
     }
+#lista2 a:visited{
+    color:blueviolet
+}
+#lista1 a:active{
+        color: green;
+    }
+
+#lista1 a:hover{
+        color: fuchsia;
+    }
+body{
+    background-color: gray;
+}
