@@ -4,4 +4,19 @@ footer{
 #lista1{
     display: inline;
     border-right: 2px solid;
+    padding-right: 5px;
+
+}
+#lista1 a:visited{
+        color: green;
+
+}
+
+#lista1  a:active{
+        color: red;
+
+}
+#lista1 a:hover{
+        color: blue;
+
 }
