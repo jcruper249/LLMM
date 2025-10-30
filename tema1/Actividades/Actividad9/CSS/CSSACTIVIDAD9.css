@@ -8,15 +8,16 @@ footer{
 
 }
 #lista1 a:visited{
-        color: green;
-
-}
-
-#lista1  a:active{
         color: red;
 
-}
-#lista1 a:hover{
-        color: blue;
+    }
 
-}
+#lista1 a:active{
+        color: green;
+
+    }
+
+#lista1 a:hover{
+        color: orange;
+
+    }
