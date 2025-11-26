@@ -1,0 +1,121 @@
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll;
+    overflow-x: hidden;
+
+}
+header{
+    background-color: #107e0c;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+    float: top;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none; 
+    margin: 15px;
+    
+}
+#introduccion{
+    margin: 50px;
+    padding-bottom: 5px;
+    background-color: hsl(73, 100%, 79%);
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#contenido{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+#bloqueHTML{
+    margin: 50px;
+    padding-bottom: 5px;
+    background-color: hsl(73, 100%, 79%);
+    text-align: left;
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-right: 10%;
+    
+}
+#listalateral{
+    width: 100px;
+    padding: 20px;
+    padding-top: 100px;
+    margin-top:108px;
+    background-color: darkgrey;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-top: auto;
+    list-style: none;
+}
+#listalateral a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+#descripcion{
+    position: relative;
+    left: 140px;
+    width: calc(100% - 160px); /* Resta el ancho del menú lateral y el margen Esto he tenido que hacerlo para que no se solape el contenido con el menú lateral */
+    padding-left: 10px;
+}
+#codigo{
+    background-color: black;
+    color: rgb(80, 238, 59);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 5px;
+    font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lightgray;
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+#Menu{
+    width: 100px;
+    padding: 20px;
+    background-color: black;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 68px;
+    color: white;
+}
+footer{
+    background-color: #107e0c;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

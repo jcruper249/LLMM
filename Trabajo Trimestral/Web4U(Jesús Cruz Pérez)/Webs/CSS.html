@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS-Web4U</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/Web4UCSS.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1 id="Inicio">Web4U</h1>
+        <nav>
+            <a href="/Web4U(Jesús Cruz Pérez)/Web4U.html">Inicio</a>
+            <a href="./HTML.html">HTML</a>
+            <a href="./SVG.html">SVG</a>
+            <a href="./CSS.html">CSS</a>
+        </nav>
+    </header>
+    <div id="listalateral">
+        <div id="Menu">
+            <h2>MENU</h2>
+        </div>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Sintaxis CSS">Sintaxis CSS</a>
+        <a href="#Selectores CSS">Selectores CSS</a>
+        <a href="#Como agregar CSS">Cómo agregar CSS</a>
+        <a href="#Comentarios CSS">Comentarios CSS</a>
+        <a href="#CSS Modelo de caja">CSS Modelo de caja</a>
+
+    </div>
+
+    <div id="descripcion">
+        <h1>CSS</h1>
+        <h2 id="Sintaxis CSS">Sintaxis CSS</h2>
+        <p>Una regla CSS consta de un selector y un bloque de declaración:</p>
+        <img src="../IMG/Sintaxis.jpg" alt="Sintaxis CSS">
+        <p>El selector apunta al elemento HTML que deseas estilizar.</p>
+        <p>El bloque de declaración contiene una o más declaraciones separadas por punto y coma.</p>
+        <p>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <div id="codigo">
+                <p>p {</p>
+                    <p style="padding-left: 20px;">color: red;</p>
+                    <p style="padding-left: 20px;">text-align: center;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <h2 id="Selectores CSS">Selectores CSS</h2>
+        <p>Los selectores CSS se utilizan para "seleccionar" los elementos HTML que deseas estilizar.</p>
+        <p>Podemos dividir los selectores CSS en cinco categorías:</p>
+        <ul>
+            <li style="list-style: none;"><strong>Selectores simples</strong> (seleccione elementos según nombre, identificación, clase)</li>
+            <li style="list-style: none;"><strong>Selectores combinados</strong>: (seleccionar elementos basados en una relación específica entre ellos)</li>
+            <li style="list-style: none;"><strong>Selectores de pseudo-clase</strong>: (seleccione elementos según un estado determinado)</li>
+            <li style="list-style: none;"><strong>Selectores de pseudo-elemento</strong>: (seleccionar y estilizar una parte de un elemento)</li>
+            <li style="list-style: none;"><strong>Selectores de atributo</strong>: (seleccione elementos según un atributo o valor de atributo)</li>
+        </ul>
+        <p>Vamos a explicar 2 de los mas basicos:</p>
+
+        <h3>El selector de elementos CSS</h3>
+        <p>El elemento el selector selecciona elementos HTML según el nombre del elemento.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <p style="font-size: 16px;">Aquí estarán todos los elementos de la página alineado con el centro, con un color de texto rojo:</p>
+            <div id="codigo">
+                <p>p {</p>
+                    <p style="padding-left: 20px;">color: red;</p>
+                    <p style="padding-left: 20px;">text-align: center;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <h3>El selector de id CSS</h3>
+        <p>El <strong>id</strong> utiliza el atributo de identificación de un elemento HTML para seleccionar un elemento específico.</p>
+        <p>La id de un elemento es única dentro de una página, por lo que el selector de identificación lo es acostumbrado a ¡selecciona un elemento único!</p>
+        <p>Para seleccionar un elemento con una identificación específica, escriba un carácter hash (#), seguido de la identificación del elemento.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <p style="font-size: 16px;">La siguiente regla CSS se aplicará al elemento HTML con id="introduccion": </p>
+            <div id="codigo">
+                <p>#introduccion {</p>
+                    <p style="padding-left: 20px;">color: blue;</p>
+                    <p style="padding-left: 20px;">text-align: center;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <h2 id="Como agregar CSS">Cómo agregar CSS</h2>
+        <p>Hay tres formas de agregar CSS a un documento HTML:</p>
+        <ul>
+            <li style="list-style: none;"><strong>Css externo</strong></li>
+            <li style="list-style: none;"><strong>Css interno</strong></li>
+            <li style="list-style: none;"><strong>Css en línea</strong></li>
+        </ul>
+
+        <h3>Css externo</h3>
+        <p>El CSS externo se define en un archivo CSS separado con una extensión <strong>.css</strong>.</p>
+        <p >El archivo CSS externo se vincula a un documento HTML mediante el elemento &lt;link&gt;.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <p style="font-size: 16px;">Los estilos externos se definen dentro del elemento &lt;link&gt;, dentro de la sección &lt;head&gt; de una página HTML:</p>
+            <div id="codigo">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;link rel="stylesheet" href="mystyle.css"&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;h1&gt;Este es un título&lt;/h1&gt;</p>
+                <p>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+        <p>Una hoja de estilo externa se puede escribir en cualquier editor de texto y debe guardarse con una extensión .css.</p>
+        <p>El archivo .css externo no debe contener etiquetas HTML.</p>
+        <p>Así se ve el archivo "mystyle.css":</p>
+        <div id="bloqueHTML">
+            <p>"mystyle.css"</p>
+            <div id="codigo">
+                <p>h1 {</p>
+                    <p style="padding-left: 20px;">color: blue;</p>
+                <p>}</p>
+                <p>p {</p>
+                    <p style="padding-left: 20px;">color: red;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <h3>Css interno</h3>
+        <p>Se puede utilizar una hoja de estilo interna si una sola página HTML tiene un estilo único.</p>
+        <p>El estilo interno se define dentro del elemento <strong>&lt;style&gt;</strong>, dentro de la sección <strong>&lt;head&gt;</strong> de una página HTML.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <p style="font-size: 16px;">Los estilos internos se definen dentro del elemento &lt;style&gt;, dentro de la sección &lt;head&gt; de una página HTML:</p>
+            <div id="codigo">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;style&gt;</p>
+                <p style="padding-left: 20px;">h1 {</p>
+                    <p style="padding-left: 40px;">color: blue;</p>
+                <p style="padding-left: 20px;">}</p>
+                <p style="padding-left: 20px;">p {</p>
+                    <p style="padding-left: 40px;">color: red;</p>
+                <p style="padding-left: 20px;">}</p>
+                <p>&lt;/style&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;h1&gt;Este es un título&lt;/h1&gt;</p>
+                <p>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+
+        <h3>Css en línea</h3>
+        <p>El CSS en línea se utiliza para aplicar un estilo único a un solo elemento HTML.</p>
+        <p>Para agregar estilos en línea, utilice el atributo <strong>style</strong> dentro del elemento HTML.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <p style="font-size: 16px;">El siguiente ejemplo aplica estilos en línea al elemento &lt;h1&gt; y al elemento &lt;p&gt;:</p>
+            <div id="codigo">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;h1 style="color:blue;"&gt;Este es un título&lt;/h1&gt;</p>
+                <p>&lt;p style="color:red;"&gt;Este es un párrafo.&lt;/p&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+
+        <h2 id="Comentarios CSS">Comentarios del CSS</h2>
+        <p>Los comentarios se utilizan para explicar el código CSS y pueden ayudarle a editarlo código fuente en una fecha posterior.</p>
+        <p>Los comentarios también se utilizan para deshabilitar temporalmente secciones del código CSS dentro de a hoja de estilo.</p>
+        <p>¡los navegadores ignoran los comentarios!</p>
+        <p>Un comentario CSS se coloca dentro del HTML <strong>&lt;style&gt;</strong> elemento, y comienza con <strong>/*</strong> y termina con <strong>*/</strong>:</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <div id="codigo">
+                <p>/* Este es un comentario de una sola línea */</p>
+                <p>p {</p>
+                <p>color: rojo;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <h2 id="CSS Modelo de caja">CSS Modelo de caja</h2>
+        <p>En CSS, el término "modelo de caja" se utiliza cuando se habla de diseño y maquetación web.</p>
+        <p>El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML.</p>
+        <p>Cada caja consta de cuatro partes: contenido, relleno, bordes y márgenes.</p>
+        <p>La siguiente imagen ilustra el modelo de caja CSS:</p>
+        <img src="../IMG/Bloque CSS.png" alt="Modelo de caja CSS">
+        <p>Explicación de las diferentes partes (de la parte más interior a la parte más exterior):</p>
+        <ul>
+            <li><strong>Contenido</strong>: El contenido de la caja, donde el texto y las imágenes aparecen.</li>
+            <li><strong>Relleno</strong>: El espacio entre el contenido de la caja y el borde de la caja. El relleno es transparente.</li>
+            <li><strong>Borde</strong>: El borde que rodea el relleno (si se ha definido). El borde es visible.</li>
+            <li><strong>Márgenes</strong>: El espacio entre el borde de la caja y las cajas de otros elementos. Los márgenes son transparentes.</li>
+        </ul>
+        <p>El modelo de caja nos permite agregar un borde alrededor de los elementos y definir el espacio entre elementos.</p>
+        <div id="bloqueHTML">
+            <p>Ejemplo de código CSS:</p>
+            <div id="codigo">
+                <p>div {</p>
+                    <p style="padding-left: 20px;">width: 300px;</p>
+                    <p style="padding-left: 20px;">border: 25px solid navy;</p>
+                    <p style="padding-left: 20px;">padding: 25px;</p>
+                    <p style="padding-left: 20px;">margin: 25px;</p>
+                <p>}</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Jesús Cruz Pérez <a style="padding-left:20%;" href="../Web4UING.html" alt="Ingles">Versión Inglesa</a></p>
+    </footer>
+</body>
+</html>

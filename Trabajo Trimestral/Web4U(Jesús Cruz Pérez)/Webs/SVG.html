@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SVG-Web4U</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/Web4UCSS.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1 id="Inicio">Web4U</h1>
+        <nav>
+            <a href="/Web4U(Jesús Cruz Pérez)/Web4U.html">Inicio</a>
+            <a href="./HTML.html">HTML</a>
+            <a href="./SVG.html">SVG</a>
+            <a href="./CSS.html">CSS</a>
+        </nav>
+    </header>
+    <div id="listalateral">
+        <div id="Menu">
+            <h2>MENU</h2>
+        </div>    
+            <a href="#Inicio">Inicio</a>
+            <a href="#Circulo SVG ">Círculo SVG</a>
+            <a href="#SVG Ellipse">SVG Ellipse</a>
+            <a href="#SVG linea">SVG Linea</a>
+            <a href="#SVG Poligono">SVG Poligono</a>
+            <a href="#SVG Polilinea">SVG Polilínea</a>
+            <a href="#SVG Rectangulo">SVG Rectángulo</a>
+    </div>
+    <div id="descripcion">
+        <h1>SVG</h1>
+        <h2 id="Circulo SVG ">Círculo SVG</h2>
+        <p>Los círculos SVG se definen con la etiqueta <strong>&lt;circle&gt;</strong></p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>cx</td>
+                    <td>Define la posición x del centro del círculo.</td>
+                </tr>
+                <tr>
+                    <td>cy</td>
+                    <td>Define la posición y del centro del círculo.</td>
+                </tr>
+                <tr>
+                    <td>r</td>
+                    <td>Define el radio del círculo.</td>
+                </tr>
+            </table>
+        </div>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red">
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="100" height="100"&gt;</p>
+                <p>&lt;circle cx="50" cy="50" r="40" fill="red" /&gt;</p>
+                <p>&lt;/svg&gt;</p>             
+            </div>
+        </div>
+
+        <h2 id="SVG Ellipse">SVG Ellipse - &lt;ellipse&gt;</h2>
+        <p>Las elipses SVG se definen con la etiqueta <strong>&lt;ellipse&gt;</strong></p>
+        <p>Una elipse está estrechamente relacionada con un círculo. La diferencia es que una elipse tiene un radio x e y que difieren entre sí, mientras que un círculo tiene x igual y radio y.</p>
+        <p>El <strong>&lt;ellipse&gt;</strong> el elemento tiene cuatro atributos básicos para posicionar y establecer tamaño de la elipse:</p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>cx</td>
+                    <td>El centro del eje x de la elipse. El valor predeterminado es 0</td>
+                </tr>
+                <tr>
+                    <td>cy</td>
+                    <td>El centro del eje y de la elipse. El valor predeterminado es 0</td>
+                </tr>
+                <tr>
+                    <td>rx</td>
+                    <td>Requerido. El radio x de la elipse</td>
+                </tr>
+                <tr>
+                    <td>ry</td>
+                    <td>Requerido. El radio y de la elipse</td>
+                </tr>
+            </table>
+        </div>
+        <svg width="200" height="100">
+            <ellipse cx="100" cy="50" rx="80" ry="40" stroke="black" fill="orange" />
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="200" height="100"&gt;</p>
+                <p>&lt;ellipse cx="100" cy="50" rx="80" ry="40" fill="orange" /&gt;</p>
+                <p>&lt;/svg&gt;</p>      
+            </div>
+        </div>
+
+        <h2 id="SVG linea">SVG Linea - &lt;line&gt;</h2>
+        <p>Las líneas SVG se definen con la etiqueta <strong>&lt;line&gt;</strong></p>
+        <p>El <strong>&lt;line&gt;</strong> el elemento crea una línea entre la posición inicial (x1,y1) y la posición final (x2,y2).</p>
+        <p>El <strong>&lt;line&gt;</strong> el elemento tiene cuatro atributos básicos para posicionar y establecer longitud de la línea:</p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>x1</td>
+                    <td>El inicio de la línea en el eje x</td>
+                </tr>
+                <tr>
+                    <td>y1</td>
+                    <td>El inicio de la línea en el eje y</td>
+                </tr>
+                <tr>
+                    <td>x2</td>
+                    <td>El final de la línea en el eje x</td>
+                </tr>
+                <tr>
+                    <td>y2</td>
+                    <td>El final de la línea en el eje y</td>
+                </tr>
+            </table>
+        </div>
+        <svg style="padding-top: 20px;" width="200" height="100">
+            <line x1="0" y1="0" x2="200" y2="100" stroke="red" />
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="200" height="100"&gt;</p>
+                <p>&lt;line x1="0" y1="0" x2="200" y2="100" stroke="red" /&gt;</p>
+                <p>&lt;/svg&gt;</p>      
+            </div>
+        </div>
+
+        <h2 id="SVG Poligono">SVG Poligono - &lt;polygon&gt;</h2>
+        <p>El <strong>&lt;polygon&gt;</strong> el elemento se utiliza para crear un gráfico que contenga al menos tres lados.</p>
+        <p>Los polígonos están hechos de líneas rectas y la forma es "cerrada" (conecta automáticamente el último punto con el primero).</p>
+        <p>El <strong>&lt;polygon&gt;</strong> el elemento tiene un atributo básico eso define los puntos del polígono:</p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Puntos</td>
+                    <td>Requerido. La lista de puntos del polígono. Cada punto debe contener un coordenada x y coordenada y</td>
+                </tr>
+            </table>
+        </div>
+        <svg width="200" height="200">
+            <polygon points="100,10 150,190 50,190" stroke="black" stroke-width="1" fill="lime" />
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="200" height="200"&gt;</p>
+                <p>&lt;polygon points="100,10 150,190 50,190" stroke="black" stroke-width="1" fill="lime" /&gt;</p>
+                <p>&lt;/svg&gt;</p>      
+            </div>
+        </div>
+
+        <h2 id="SVG Polilinea">SVG Polilínea - &lt;polyline&gt;</h2>
+        <p>El <strong>&lt;polyline&gt;</strong> el elemento se utiliza para crear una serie de líneas conectadas.</p>
+        <p>A diferencia del <strong>&lt;polygon&gt;</strong> el elemento, el <strong>&lt;polyline&gt;</strong> el elemento no cierra automáticamente la forma (no conecta el último punto con el primero).</p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Puntos</td>
+                    <td>Requerido. La lista de puntos de la polilínea. Cada punto debe contener un coordenada x y coordenada y</td>
+                </tr>
+            </table>
+        </div>
+        <svg  style="padding-top: 15px;" width="200" height="200">
+            <polyline points="0,0 50,150 100,75 150,50 200,140 250,140" stroke="blue" stroke-width="2" fill="none" />
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="200" height="200"&gt;</p>
+                <p>&lt;polyline points="0,0 50,150 100,75 150,50 200,140 250,140" stroke="blue" stroke-width="2" fill="none" /&gt;</p>
+                <p>&lt;/svg&gt;</p>      
+            </div>
+        </div>
+
+        <h2 id="SVG Rectangulo">SVG Rectángulo - &lt;rect&gt;</h2>
+        <p>Los rectángulos SVG se definen con la etiqueta <strong>&lt;rect&gt;</strong></p>
+        <p>El <strong>&lt;rect&gt;</strong> el elemento tiene cuatro atributos básicos para posicionar y establecer tamaño del rectángulo:</p>
+        <div id="tablas">
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>La posición x para la esquina superior izquierda del rectángulo</td>
+                </tr>
+                <tr>
+                    <td>y</td>
+                    <td>La posición y para la esquina superior izquierda del rectángulo</td>
+                </tr>
+                <tr>
+                    <td>rx</td>
+                    <td>El radio de las esquinas redondeadas en el eje x</td>
+                </tr>
+                <tr>
+                    <td>ry</td>
+                    <td>El radio de las esquinas redondeadas en el eje y</td>
+                </tr>   
+                <tr>
+                    <td>width</td>
+                    <td>Requerido. El ancho del rectángulo</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Requerido. La altura del rectángulo</td>
+                </tr>
+            </table>
+        </div>
+        <svg width="200" height="100">
+            <rect x="10" y="10" width="150" height="80" stroke="black" fill="blue" />
+        </svg>
+        <div id="bloqueHTML">
+            Ejemplo de código SVG:
+            <div id="codigo">
+                <p>&lt;svg width="200" height="100"&gt;</p>
+                <p>&lt;rect x="10" y="10" width="150" height="80" stroke="black" fill="blue" /&gt;</p>
+                <p>&lt;/svg&gt;</p>      
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Jesús Cruz Pérez <a style="padding-left:20%;" href="../Web4UING.html" alt="Ingles">Versión Inglesa</a></p>
+    </footer>
+</body>
+</html>
