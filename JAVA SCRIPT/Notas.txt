@@ -1,0 +1,11 @@
+OPERADORES
+
++ : Sumar
+- : restar 
+* : multilplicar
+** : exponente
+/ : Dividir
+% : Resto de una division
+++ : Incremento
+-- : Decremento
+
