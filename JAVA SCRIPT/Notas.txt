@@ -9,3 +9,15 @@ OPERADORES
 ++ : Incremento
 -- : Decremento
 
+El operador + tambien sirve para concatenar
+EJ: let texto3 = texto1 + " " + texto2 
+
+OPERADORES RELACIONALES
+== : Igual que
+=== : Igual que y mismo tipo de valor
+!= : NO Igual
+!==: NO Igual que y mismo tipo de valor
+> : Mayor
+< : Menor
+>= : Mayor Igual que 
+<= : Menor Igual que 
