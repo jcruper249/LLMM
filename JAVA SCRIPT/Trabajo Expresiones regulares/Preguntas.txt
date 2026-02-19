@@ -1,0 +1,27 @@
+1.¿Qué es una expresión regular?
+    Es un patron de busqueda que se utiliza para encontrar validar o reemplazar texto dentro de una cadena de texto
+
+2.¿Para qué sirven en informática?
+    Validar datos, buscar información, Reemplazar texto automaticamente, procesamiento de log y errores
+
+3.¿Por qué son importantes para un administrador de sistemas?
+    Para filtrar información, automatizar analisis de registros, detectar errores masivos, configurar reglas en el firewall, etc...
+
+4.Explica los principales metacaracteres y cuantificadores
+    Metacaracteres
+        . (Punto): Coincide con cualquier carácter individual (excepto salto de línea)
+        ^ (Circunflejo): Indica el inicio de la línea o cadena.
+        $ (Dólar): Indica el final de la línea o cadena.
+        \ (Barra invertida o Escape): Se usa para buscar caracteres que son metacaracteres.
+        [] (Clases de caracteres): Define un conjunto de caracteres posibles.
+        [^] (Negación): Negar los caracteres dentro de un conjunto.
+        | (Alternancia): Actúa como un "o" lógico
+        () (Agrupación): Agrupa partes de una expresión para tratarlas como una unidad.
+    
+    Cuantificadores
+        * (Asterisco): Cero o más repeticiones del elemento anterior.
+        + (Más): Una o más repeticiones del elemento anterior.
+        ? (Interrogación): Cero o una repetición (hace que el elemento sea opcional).
+        {n} (Llaves): Exactamente n repeticiones.
+        {n,} (Llaves): n o más repeticiones.
+        {n,m} (Llaves): Entre n y m repeticiones.
