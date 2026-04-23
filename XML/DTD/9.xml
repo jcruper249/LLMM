@@ -1,0 +1,7 @@
+<!DOCTYPE curso[
+<!ELEMENT curso (nombre, alumnos+)
+<!ELEMENT alumno (nombre, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ATTLIST matricula ID #REQUIRED>
+]>

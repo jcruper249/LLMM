@@ -1,0 +1,20 @@
+<!DOCTYPE empresa[
+<!ELEMENT empresa (empleado+)>
+<!ELEMENT empleado (nombre, puesto)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ATTLIST nombre id ID #REQUIRED>
+
+
+]>
+
+<empresa>
+  <empleado id="e1">
+    <nombre>Ana</nombre>
+    <puesto>Programadora</puesto>
+  </empleado>
+  <empleado id="e2">
+    <nombre>Luis</nombre>
+    <puesto>Administrador</puesto>
+  </empleado>
+</empresa>

@@ -1,0 +1,9 @@
+<!DOCTYPE empleados [
+<!ELEMENT empleado (telefono?, nombre)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT nombre  (#PCDATA)>
+]>
+<empleados>
+    <nombre>Jesus</nombre>
+    <telefono>123456788</telefono>
+</empleados>

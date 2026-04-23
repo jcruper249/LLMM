@@ -1,0 +1,18 @@
+
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro*)>
+<!ELEMENT libro (titulo, autor)>
+<!ATTLIST libro isbn ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+]>
+<biblioteca>
+    <libro isbn="978-3-16-148410-0">
+        <titulo>El Gran Gatsby</titulo>
+        <autor>F. Scott Fitzgerald</autor>
+    </libro>
+    <libro isbn="978-0-14-028333-4">
+        <titulo>Cien Años de Soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+    </libro>
+</biblioteca>
